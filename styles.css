@@ -48,3 +48,8 @@ input[type="checkbox"]:checked ~ h2 ~ #pane {
 #container h2 {
 	border-bottom: 1px solid black;
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
