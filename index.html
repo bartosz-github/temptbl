@@ -9,42 +9,53 @@
 </head>
  
 <body>
-<div id="container">
-  <div>
-    <input type="checkbox" id="label1">
-    <h2><label for="label1">First Label</label></h2>
-    <div id="pane">
-      <p>Hide or display this text on click.</p>
-    </div>
-  </div>
-
-  <div>
-    <input type="checkbox" id="label2">
-    <h2><label for="label2">Second Label</label></h2>
-    <div id="pane">
-      <p>Hide or display this text on click.</p>
-    </div>
-  </div>
-</div>
-
-      <table>
-        <tr>
-          <th>Company</th>
-          <th>Contact</th>
-          <th>Country</th>
-        </tr>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-        </tr>
-        <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
-        </tr>
-      </table>
+  <form>
+    <fieldset disabled>
+      <legend>Disabled loging fieldset</legend>
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" value="Chris" />
+      </div>
+      <div>
+        <label for="pwd">Archetype: </label>
+        <input type="password" id="pwd" value="Wookie" />
+      </div>
+    </fieldset>
+  </form>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Person</th>
+      <th scope="col">Most interest in</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Chris</th>
+      <td>HTML tables</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th scope="row">Sarah</th>
+      <td>JavaScript frameworks</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <th scope="row">Karen</th>
+      <td>Web performance</td>
+      <td>36</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th scope="row" colspan="2">Average age</th>
+      <td>33</td>
+    </tr>
+  </tfoot>
+</table>
 
 </body>
- 
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset -->
 </html>
